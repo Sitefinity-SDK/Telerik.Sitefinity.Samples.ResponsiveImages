@@ -1,0 +1,2 @@
+Telerik.Sitefinity.Samples.ResponsiveImages
+===========================================
