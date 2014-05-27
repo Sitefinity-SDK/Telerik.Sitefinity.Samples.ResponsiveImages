@@ -46,19 +46,19 @@ Clear the NuGet cache files. To do this:
 11. Click Add an image thumbnail size button and create three thumbnail sizes with the following properties:
 
 
-| Property                   | Thumbnail Size 1                           | Thumbnail Size 2                           |
-| ---------------------------|:------------------------------------------:|:------------------------------------------:|
-| Name                       | Big screen phones                          | Tablets                                    |
-| Resize image               | Resize to area                             |   Resize to area                           |
-| Max width                  | 480                                        |    600                                     |
-| Max height                 | 480                                        |    600                                     |
-| Quality                    | High                                       |    High                                    |
-| For developers: 
-name used in code            | thumb480                                   |    thumb600                                |
-| The thumbnail is valid for:| Devices with width 480px to 960px, such as:|    Devices with width 480px to 960px, such as:|
-|                            | * HTC - Vivid, Amaze, HD2                  |  *iPad                                     |
-|                            | * BlackBerry Bold 9900                     |  *Samsung Galaxy Tab                       |
-|                            | * Samsung Galaxy Note 3, etc.              |  * Kindle Fire, etc.                       |
+| Property                          | Thumbnail size 1                            | Thumbnail size 2                             | Thumbnail size 3                            |
+|-----------------------------------|---------------------------------------------|----------------------------------------------|---------------------------------------------|
+| Name                              | Big screen phones                           | Tablets                                      | Big tablets                                 |
+| Resize image                      | Resize to area                              | Resize to area                               | Resize to area                              |
+| Max width                         | 480                                         | 600                                          | 768                                         |
+| Max height                        | 480                                         | 600                                          | 768                                         |
+| Quality                           | High                                        | High                                         | High                                        |
+| For developers: name used in code | thumb480                                    | thumb600                                     | thumb768                                    |
+| The thumbnail is valid for:       | Devices with width 480px to 960px, such as: | Devices with width 600px to 1024px, such as: | Devices with width 480px to 960px, such as: |
+|                                   | HTC - Vivid, Amaze, HD2                     | iPad                                         | Samsung Galaxy Note 8                       |
+|                                   | BlackBerry Bold 9900                        | Samsung Galaxy Tab                           | Kindle Fire HD                              |
+|                                   | Samsung Galaxy Note 3, etc.                 | Kindle Fire, etc.                            | Samsung Galaxy Tab                          |
+|                                   |                                             |                                              | Microsoft Surface Pro, etc.                 |
 
 12. Drag the ResponsiveImage widget on the page and click its Edit button.
 13. Click Change photo and select one of the uploaded images.
