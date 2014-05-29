@@ -25,25 +25,19 @@ Clear the NuGet cache files. To do this:
 
 ### Installation instructions: SDK Samples from GitHub
 
-
-1. In Solution Explorer, navigate to _SitefinityWebApp_ -> *App_Data* -> _Sitefinity_ -> _Configuration_ and select the **DataConfig.config** file. 
-2. Modify the **connectionString** value to match your server address.
- 
+1. Clone the sample repository
+2. Open the .sln file in Visual Studio
+2. Build the sample solution
+3. Add a reference to the ResponsiveImages.dll file in your SitefinityWebApp
+4. Build the solution and restart the application
 
 ### Run the sample
 
-1. Download the ResponsiveImage widget and extract the contents of the ZIP file to a dedicated folder.
-2. Open your project in Visual Studio.
-3. Copy all the content from the extraction folder.
-4. In the context menu of your SitefinityWebApp project, click Paste.
-5. Build your solution and restart the application.
-   If prompted, save the solution file in the root application folder.
-6. Close Visual Studio.
-7. Perform procedure Registering a new widget in Sitefinity.
-8. Run the project and click Content » Images.
-9. Upload some images using procedure Uploading and editing images.
-10. On Images page, in the right pane, click Thumbnails settings.
-11. Click Add an image thumbnail size button and create three thumbnail sizes with the following properties:
+1. Perform procedure [Registering a new widget in Sitefinity] (http://www.sitefinity.com/documentation/documentationarticles/installation-and-administration-guide/system-settings/registering-a-new-widget-in-sitefinity).
+2. Run the project and click Content » Images
+3. Upload some images using procedure Uploading and editing images.
+4. On Images page, in the right pane, click Thumbnails settings.
+5. Click Add an image thumbnail size button and create three thumbnail sizes with the following properties:
 
 
 | Property                          | Thumbnail size 1                            | Thumbnail size 2                             | Thumbnail size 3                            |
@@ -60,9 +54,9 @@ Clear the NuGet cache files. To do this:
 |                                   | Samsung Galaxy Note 3, etc.                 | Kindle Fire, etc.                            | Samsung Galaxy Tab                          |
 |                                   |                                             |                                              | Microsoft Surface Pro, etc.                 |
 
-12. Drag the ResponsiveImage widget on the page and click its Edit button.
-13. Click Change photo and select one of the uploaded images.
-14. Click Save and view the page on the frontend.
+6. Drag the ResponsiveImage widget on the page and click its Edit button.
+7. Click Change photo and select one of the uploaded images.
+8. Click Save and view the page on the frontend.
 You are now able to view the image resized according to your screen size.
 
 ### Additional resources
