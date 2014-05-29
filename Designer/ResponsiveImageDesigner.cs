@@ -6,48 +6,21 @@ using Telerik.Sitefinity.Web.UI;
 using Telerik.Sitefinity.Web.UI.ControlDesign;
 using Telerik.Sitefinity.Web.UI.Fields;
 
-namespace SitefinityWebApp.Designer
+namespace ResponsiveImages.Designer
 {
     /// <summary>
-    /// Represents a designer for the <typeparamref name="SitefinityWebApp.ResponsiveImageDesigner"/> widget
+    /// Represents a designer for the <typeparamref name="ResponsiveImages.Designer.ResponsiveImageDesigner"/> widget
     /// </summary>
     public class ResponsiveImageDesigner : ControlDesignerBase
-    {
-        #region Private members & constants
-
-        private const string TheScriptReference = "~/Designer/ResponsiveImageDesigner.js";
-        private static readonly string TheLayoutTemplatePath = "~/Designer/ResponsiveImageDesigner.ascx";
-        
-        #endregion
-        
+    {       
         #region Properties
 
-        /// <summary>
-        /// Gets the layout template's relative or virtual path.
-        /// </summary>
-        public override string LayoutTemplatePath
-        {
-            get
-            {
-                if (string.IsNullOrEmpty(base.LayoutTemplatePath))
-                    return ResponsiveImageDesigner.TheLayoutTemplatePath;
-                return base.LayoutTemplatePath;
-            }
-
-            set
-            {
-                base.LayoutTemplatePath = value;
-            }
-        }
-
-        /// <summary>
-        /// Obsolete. Use LayoutTemplatePath instead.
-        /// </summary>
+        /// <inheritdoc />
         protected override string LayoutTemplateName
         {
             get
             {
-                return string.Empty;
+                return ResponsiveImageDesigner.layoutTemplatePath;
             }
         }
 
@@ -104,7 +77,8 @@ namespace SitefinityWebApp.Designer
         public override System.Collections.Generic.IEnumerable<System.Web.UI.ScriptReference> GetScriptReferences()
         {
             var scripts = new List<ScriptReference>(base.GetScriptReferences());
-            scripts.Add(new ScriptReference(ResponsiveImageDesigner.TheScriptReference));
+            var assemblyName = this.GetType().Assembly.GetName().ToString();
+            scripts.Add(new ScriptReference(ResponsiveImageDesigner.scriptReference, assemblyName));
             return scripts;
         }
 
@@ -120,6 +94,13 @@ namespace SitefinityWebApp.Designer
         protected override void InitializeControls(GenericContainer container)
         {
         }
+
+        #endregion
+
+        #region Private members & constants
+
+        private const string scriptReference = "ResponsiveImages.Designer.ResponsiveImageDesigner.js";
+        private static readonly string layoutTemplatePath = "ResponsiveImages.Designer.ResponsiveImageDesigner.ascx";
 
         #endregion
     }

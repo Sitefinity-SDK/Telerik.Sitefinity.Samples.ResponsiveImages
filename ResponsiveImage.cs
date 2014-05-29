@@ -1,56 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Web;
 using System.Web.UI;
+using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using Telerik.Sitefinity.Libraries.Model;
 using Telerik.Sitefinity.Modules.Libraries;
+using Telerik.Sitefinity.Services;
 using Telerik.Sitefinity.Web.UI;
+using Telerik.Sitefinity.Web.UI.ControlDesign;
 
-namespace SitefinityWebApp
+namespace ResponsiveImages
 {
     /// <summary>
     /// Class used to create custom page widget
     /// </summary>
-    [Telerik.Sitefinity.Web.UI.ControlDesign.ControlDesigner(typeof(SitefinityWebApp.Designer.ResponsiveImageDesigner))]
-    public class ResponsiveImage : SimpleScriptView
+    [ControlDesigner(typeof(ResponsiveImages.Designer.ResponsiveImageDesigner))]
+    public class ResponsiveImage : SimpleView
     {
-        #region Private members & constants
-        private static readonly string TheLayoutTemplatePath = "~/ResponsiveImage.ascx";
-        #endregion
-
         #region Properties
         /// <summary>
         /// Gets or sets the message that will be displayed in the label.
         /// </summary>
         public Guid? ImageId { get; set; }
 
-        /// <summary>
-        /// Gets the layout template's relative or virtual path.
-        /// </summary>
-        public override string LayoutTemplatePath
-        {
-            get
-            {
-                if (string.IsNullOrEmpty(base.LayoutTemplatePath))
-                    return ResponsiveImage.TheLayoutTemplatePath;
-                return base.LayoutTemplatePath;
-            }
-
-            set
-            {
-                base.LayoutTemplatePath = value;
-            }
-        }
-
-        /// <summary>
-        /// Obsolete. Use LayoutTemplatePath instead.
-        /// </summary>
         protected override string LayoutTemplateName
         {
             get
             {
-                return string.Empty;
+                return ResponsiveImage.layoutTemplatePath;
             }
         }
 
@@ -65,34 +44,25 @@ namespace SitefinityWebApp
             }
         }
 
+        protected virtual HtmlImage OriginalImage
+        {
+            get
+            {
+                return this.Container.GetControl<HtmlImage>("originalImage", true);
+            }
+        }
+
+        protected virtual HtmlImage ResponsiveImageControl
+        {
+            get
+            {
+                return this.Container.GetControl<HtmlImage>("responsiveImage", true);
+            }
+        }
+
         #endregion
 
         #region Methods
-
-        /// <summary>
-        /// Gets a collection of script descriptors that represent ECMAScript (JavaScript) client components.
-        /// </summary>
-        /// <returns>
-        /// An <see cref="T:System.Collections.IEnumerable" /> collection of <see cref="T:System.Web.UI.ScriptDescriptor" /> objects.
-        /// </returns>
-        public override IEnumerable<ScriptDescriptor> GetScriptDescriptors()
-        {
-            var descriptor = new ScriptControlDescriptor(typeof(ResponsiveImage).FullName, this.ClientID);
-            return new[] { descriptor };
-        }
-
-        /// <summary>
-        /// Gets a collection of <see cref="T:System.Web.UI.ScriptReference" /> objects that define script resources that the control requires.
-        /// </summary>
-        /// <returns>
-        /// An <see cref="T:System.Collections.IEnumerable" /> collection of <see cref="T:System.Web.UI.ScriptReference" /> objects.
-        /// </returns>
-        public override IEnumerable<ScriptReference> GetScriptReferences()
-        {
-            var scripts = new List<ScriptReference>();
-            scripts.Add(new ScriptReference("~/Scripts/picturefill.js"));
-            return scripts;
-        }
 
         /// <summary>
         /// Initializes the controls.
@@ -111,8 +81,26 @@ namespace SitefinityWebApp
             {
                 this.MessageLabel.Text = "Selected an Image with id : '" + this.ImageId.Value + "'";
                 Context.Items.Add("Image", LibrariesManager.GetManager().GetMediaItem(this.ImageId.Value));
+
+                //sets the original image url
+                this.OriginalImage.Src = ((MediaContent)Context.Items["Image"]).ResolveMediaUrl();
+
+                //sets the reponsive image url
+                this.ResponsiveImageControl.Attributes.Add("srcset", String.Join(", ",
+                    new List<string>() { ((MediaContent)Context.Items["Image"]).ResolveThumbnailUrl("thumb768", true) + " 768w",
+                        ((MediaContent)Context.Items["Image"]).ResolveThumbnailUrl("thumb600", true) + " 600w",
+                        ((MediaContent)Context.Items["Image"]).ResolveThumbnailUrl("thumb480", true) + " 480w"
+                    }));
+
             }
         }
+
+        #endregion
+
+        #region Private members & constants
+
+        private static readonly string layoutTemplatePath = "ResponsiveImages.ResponsiveImage.ascx";
+
         #endregion
     }
 }
