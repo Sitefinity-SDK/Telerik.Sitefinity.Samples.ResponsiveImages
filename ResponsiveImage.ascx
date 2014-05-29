@@ -1,7 +1,16 @@
 ﻿<%@ Control Language="C#" %>
 
+<%@ Register Assembly="Telerik.Sitefinity" Namespace="Telerik.Sitefinity.Web.UI" TagPrefix="sitefinity" %>
+
 <%@ Import Namespace="Telerik.Sitefinity.Modules.Libraries" %>
 <%@ Import Namespace="Telerik.Sitefinity.Libraries.Model" %>
+<%@ Import Namespace="System.Web" %>
+
+<asp:HiddenField runat="server" ID="hfMediaContentUrl" />
+
+<sitefinity:ResourceLinks ID="resourcesLinks" runat="server" UseEmbeddedThemes="True">
+    <sitefinity:ResourceFile AssemblyInfo="ResponsiveImages.ResponsiveImage, ResponsiveImages" Name="ResponsiveImages.Scripts.picturefill.js" />
+</sitefinity:ResourceLinks>
 
 <p>
     <strong>
@@ -10,26 +19,12 @@
 </p>
 <p>
     <strong>Original Image :
-    <img src="<%= ((MediaContent)Context.Items["Image"]).ResolveMediaUrl() %>" />
+    <img runat="server" Id="originalImage" />
     </strong>
 </p>
 
 <br />
 <strong>Responsive Image:</strong>
 <p>
-    <picture>
-		    <!--[if IE 9]><video style="display: none;"><![endif]-->
-		    <source srcset="<%= ((MediaContent)Context.Items["Image"]).ResolveThumbnailUrl("thumb768", true) %>" media="(min-width: 768px)"/>
-		    <source srcset="<%= ((MediaContent)Context.Items["Image"]).ResolveThumbnailUrl("thumb600", true) %>" media="(min-width: 600px)"/>
-            <source srcset="<%= ((MediaContent)Context.Items["Image"]).ResolveThumbnailUrl("thumb480", true) %>"/>
-		    <!--[if IE 9]></video><![endif]-->
-		    <img srcset="<%= ((MediaContent)Context.Items["Image"]).ResolveThumbnailUrl("thumb480", true) %>" />
-    </picture>
+	<img runat="server" id="responsiveImage" sizes="(min-width: 768px), (min-width: 600px), (min-width: 480px)" />
 </p>
-<%--     
-    Alternative way to set the different thumbnails
-<p>
-	<img sizes="100vw, (min-width: 40em) 80vw"
-			srcset="examples/images/pic-small.png 400w, examples/images/pic-medium.png 800w, examples/images/pic-large.png 1200w">
-</p>
---%>

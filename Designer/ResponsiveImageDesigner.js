@@ -1,22 +1,22 @@
-Type.registerNamespace("SitefinityWebApp.Designer");
+Type.registerNamespace("ResponsiveImages.Designer");
 
-SitefinityWebApp.Designer.ResponsiveImageDesigner = function (element) {
+ResponsiveImages.Designer.ResponsiveImageDesigner = function (element) {
     /* Initialize Message fields */
     this._imageField = null;
     
     /* Calls the base constructor */
-    SitefinityWebApp.Designer.ResponsiveImageDesigner.initializeBase(this, [element]);
+    ResponsiveImages.Designer.ResponsiveImageDesigner.initializeBase(this, [element]);
 }
 
-SitefinityWebApp.Designer.ResponsiveImageDesigner.prototype = {
+ResponsiveImages.Designer.ResponsiveImageDesigner.prototype = {
     /* --------------------------------- set up and tear down --------------------------------- */
     initialize: function () {
         /* Here you can attach to events or do other initialization */
-        SitefinityWebApp.Designer.ResponsiveImageDesigner.callBaseMethod(this, 'initialize');
+        ResponsiveImages.Designer.ResponsiveImageDesigner.callBaseMethod(this, 'initialize');
     },
     dispose: function () {
         /* this is the place to unbind/dispose the event handlers created in the initialize method */
-        SitefinityWebApp.Designer.ResponsiveImageDesigner.callBaseMethod(this, 'dispose');
+        ResponsiveImages.Designer.ResponsiveImageDesigner.callBaseMethod(this, 'dispose');
     },
 
     /* --------------------------------- public methods ---------------------------------- */
@@ -55,4 +55,4 @@ SitefinityWebApp.Designer.ResponsiveImageDesigner.prototype = {
     set_imageField: function (value) { this._imageField = value; }
 }
 
-SitefinityWebApp.Designer.ResponsiveImageDesigner.registerClass('SitefinityWebApp.Designer.ResponsiveImageDesigner', Telerik.Sitefinity.Web.UI.ControlDesign.ControlDesignerBase);
+ResponsiveImages.Designer.ResponsiveImageDesigner.registerClass('ResponsiveImages.Designer.ResponsiveImageDesigner', Telerik.Sitefinity.Web.UI.ControlDesign.ControlDesignerBase);
