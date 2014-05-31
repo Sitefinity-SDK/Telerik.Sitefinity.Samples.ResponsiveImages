@@ -63,6 +63,7 @@ You are now able to view the image resized according to your screen size.
 
 ### Additional resources
 
+Youtube video demo:   
 [![Responsive/adaptive images in Sitefinity](https://raw.githubusercontent.com/Sitefinity-SDK/Telerik.Sitefinity.Samples.ResponsiveImages/master/VideoEmbed.png)](https://www.youtube.com/watch?v=mUEJJx1S8Ak)
 
 [Create a custom widget to display responsive images](http://www.sitefinity.com/documentation/documentationarticles/create-a-custom-widget-to-display-responsive-images)
