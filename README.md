@@ -35,7 +35,11 @@ Clear the NuGet cache files. To do this:
 
 ### Run the sample
 
-1. Perform procedure [Registering a new widget in Sitefinity] (http://www.sitefinity.com/documentation/documentationarticles/installation-and-administration-guide/system-settings/registering-a-new-widget-in-sitefinity).
+1. Perform procedure [Registering a new widget in Sitefinity](http://docs.sitefinity.com/register-a-new-widget-in-sitefinity-toolbox).   
+Register the widget with the following properties:    
+**Control CLR Type or Virtual Path**:  ResponsiveImages.ResponsiveImage   
+**Name**: ResponsiveImage
+**Title**:  ResponsiveImage
 2. Run the project and click Content » Images
 3. Upload some images using procedure Uploading and editing images.
 4. On Images page, in the right pane, click Thumbnails settings.
@@ -62,6 +66,7 @@ Clear the NuGet cache files. To do this:
 You are now able to view the image resized according to your screen size.
 
 ### Additional resources
+<iframe width="480" height="360" src="https://www.youtube.com/embed/mUEJJx1S8Ak?rel=0" frameborder="0" allowfullscreen></iframe>
 
-[Create a custom widget to display responsive images](http://www.sitefinity.com/documentation/documentationarticles/create-a-custom-widget-to-display-responsive-images)
+[Create a custom widget to display responsive images](http://docs.sitefinity.com/tutorial-create-a-custom-widget-to-display-responsive-images)
 
