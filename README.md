@@ -43,7 +43,7 @@ For a history and additional information related to package versions on differen
 1. Perform procedure [Registering a new widget in Sitefinity](http://docs.sitefinity.com/register-a-new-widget-in-sitefinity-toolbox).   
 Register the widget with the following properties:    
 **Control CLR Type or Virtual Path**:  ResponsiveImages.ResponsiveImage   
-**Name**: ResponsiveImage
+**Name**: ResponsiveImage  
 **Title**:  ResponsiveImage
 2. Run the project and click Content » Images
 3. Upload some images using procedure Uploading and editing images.
@@ -71,7 +71,7 @@ Register the widget with the following properties:
 You are now able to view the image resized according to your screen size.
 
 ### Additional resources
-<iframe width="480" height="360" src="https://www.youtube.com/embed/mUEJJx1S8Ak?rel=0" frameborder="0" allowfullscreen></iframe>
+Youtube video demo:   
+[![Responsive/adaptive images in Sitefinity](https://raw.githubusercontent.com/Sitefinity-SDK/Telerik.Sitefinity.Samples.ResponsiveImages/master/VideoEmbed.png)](https://www.youtube.com/watch?v=mUEJJx1S8Ak)
 
 [Create a custom widget to display responsive images](http://docs.sitefinity.com/tutorial-create-a-custom-widget-to-display-responsive-images)
-
