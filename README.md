@@ -1,15 +1,15 @@
-Telerik.Sitefinity.Samples.ResponsiveImages
+Progress.Sitefinity.Samples.ResponsiveImages
 ===========================================
 
 [![Build Status](http://sdk-jenkins-ci.cloudapp.net/buildStatus/icon?job=Telerik.Sitefinity.Samples.ResponsiveImages.CI)](http://sdk-jenkins-ci.cloudapp.net/job/Telerik.Sitefinity.Samples.ResponsiveImages.CI/)
 
 ## Responsive Images Sample
 
-Responsive design technique builds a single template that dynamically adapts to any resolution or a device. For more information, see [Displaying pages on mobile devices] (http://www.sitefinity.com/documentation/documentationarticles/download-and-install-the-responsiveimage-widget). In Sitefinity responsive design module, responsive images do not come out-of-the-box. This article demonstrates how to build a custom widget that displays responsive images.You can download the source code and implement it. Alternatively, you can follow the steps below to create the widget from scratch. 
+Responsive design technique builds a single template that dynamically adapts to any resolution or a device. For more information, see [Displaying pages on mobile devices] (http://www.sitefinity.com/documentation/documentationarticles/download-and-install-the-responsiveimage-widget). In the Sitefinity CMS responsive design module, responsive images do not come out-of-the-box. This article demonstrates how to build a custom widget that displays responsive images.You can download the source code and implement it. Alternatively, you can follow the steps below to create the widget from scratch. 
 
 ### Requirements
 
-* Sitefinity license
+* Sitefinity CMS license
 
 * .NET Framework 4
 
@@ -40,7 +40,7 @@ For a history and additional information related to package versions on differen
 
 ### Run the sample
 
-1. Perform procedure [Registering a new widget in Sitefinity](http://docs.sitefinity.com/register-a-new-widget-in-sitefinity-toolbox).   
+1. Perform procedure [Registering a new widget in Sitefinity CMS](http://docs.sitefinity.com/register-a-new-widget-in-sitefinity-toolbox).   
 Register the widget with the following properties:    
 **Control CLR Type or Virtual Path**:  ResponsiveImages.ResponsiveImage   
 **Name**: ResponsiveImage  
@@ -72,6 +72,6 @@ You are now able to view the image resized according to your screen size.
 
 ### Additional resources
 Youtube video demo:   
-[![Responsive/adaptive images in Sitefinity](https://raw.githubusercontent.com/Sitefinity-SDK/Telerik.Sitefinity.Samples.ResponsiveImages/master/VideoEmbed.png)](https://www.youtube.com/watch?v=mUEJJx1S8Ak)
+[![Responsive/adaptive images in Sitefinity CMS](https://raw.githubusercontent.com/Sitefinity-SDK/Telerik.Sitefinity.Samples.ResponsiveImages/master/VideoEmbed.png)](https://www.youtube.com/watch?v=mUEJJx1S8Ak)
 
 [Create a custom widget to display responsive images](http://docs.sitefinity.com/tutorial-create-a-custom-widget-to-display-responsive-images)
