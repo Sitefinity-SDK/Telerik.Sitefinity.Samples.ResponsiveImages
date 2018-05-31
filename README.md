@@ -1,23 +1,15 @@
 Progress.Sitefinity.Samples.ResponsiveImages
 ===========================================
 
-### Latest supported version: Sitefinity 11.0.6700.0
-
-[![Build Status](http://sdk-jenkins-ci.cloudapp.net/buildStatus/icon?job=Telerik.Sitefinity.Samples.ResponsiveImages.CI)](http://sdk-jenkins-ci.cloudapp.net/job/Telerik.Sitefinity.Samples.ResponsiveImages.CI/)
+### Latest supported version: Sitefinity CMS 11.0.6700.0
 
 ## Responsive Images Sample
 
 Responsive design technique builds a single template that dynamically adapts to any resolution or a device. For more information, see [Displaying pages on mobile devices] (http://www.sitefinity.com/documentation/documentationarticles/download-and-install-the-responsiveimage-widget). In the Sitefinity CMS responsive design module, responsive images do not come out-of-the-box. This article demonstrates how to build a custom widget that displays responsive images.You can download the source code and implement it. Alternatively, you can follow the steps below to create the widget from scratch. 
 
 ### Requirements
-
-* Sitefinity CMS license
-
-* .NET Framework 4
-
-* Visual Studio 2012
-
-* Microsoft SQL Server 2008R2 or later versions
+You must have a Sitefinity CMS license
+For more information, see the [System requirements] (https://docs.sitefinity.com/system-requirements) for the  respective Sitefinity CMS version.
 
 ### Prerequisites
 
@@ -30,7 +22,6 @@ Clear the NuGet cache files. To do this:
 The solution in this repository relies on NuGet packages with automatic package restore while the build procedure takes place.   
 For a full list of the referenced packages and their versions see the [packages.config](https://github.com/Sitefinity-SDK/Telerik.Sitefinity.Samples.ResponsiveImages/blob/master/packages.config) file.    
 For a history and additional information related to package versions on different releases of this repository, see the [Releases page](https://github.com/Sitefinity-SDK/Telerik.Sitefinity.Samples.ResponsiveImages/releases).    
-
 
 ### Installation instructions: SDK Samples from GitHub
 
