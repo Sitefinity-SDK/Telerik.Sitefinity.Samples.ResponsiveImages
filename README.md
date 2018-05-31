@@ -9,6 +9,7 @@ Responsive design technique builds a single template that dynamically adapts to 
 
 ### Requirements
 You must have a Sitefinity CMS license
+
 For more information, see the [System requirements](https://docs.sitefinity.com/system-requirements) for the  respective Sitefinity CMS version.
 
 ### Prerequisites
