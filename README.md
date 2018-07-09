@@ -55,7 +55,7 @@ In the Sitefinity CMS responsive design module, responsive images do not come ou
 | **Max height**                        | 480                                         | 600                                          | 768                                         |
 | **Quality**                           | High                                        | High                                         | High                                        |
 | **For developers: name used in code** | thumb480                                    | thumb600                                     | thumb768                                    |
-| **The thumbnail is valid for:**       | Devices with width 480px to 960px, such as: | Devices with width 600px to 1024px, such as: | Devices with width 480px to 960px, such as: |
+| The thumbnail will be valid for:       | Devices with width 480px to 960px, such as: | Devices with width 600px to 1024px, such as: | Devices with width 480px to 960px, such as: |
 |                                   | HTC - Vivid, Amaze, HD2                     | iPad                                         | Samsung Galaxy Note 8                       |
 |                                   | BlackBerry Bold 9900                        | Samsung Galaxy Tab                           | Kindle Fire HD                              |
 |                                   | Samsung Galaxy Note 3, etc.                 | Kindle Fire, etc.                            | Samsung Galaxy Tab                          |
