@@ -41,7 +41,7 @@ In the Sitefinity CMS responsive design module, responsive images do not come ou
    - _Control CLR Type or Virtual Path_:  `ResponsiveImages.ResponsiveImage`   
    - _Name_: `ResponsiveImage`  
    - _Title_: `ResponsiveImage`  
-2. Run the project and click _Content_ >> _Images_
+2. Run the project and click _Content_ >> _Images_.
 3. Upload some images.
 4. On _Images_ page, in the right pane, click _Thumbnails settings_.
 5. Click _Add an image thumbnail size_ button and create three thumbnail sizes with the following properties:
