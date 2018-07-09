@@ -66,10 +66,8 @@ In the Sitefinity CMS responsive design module, responsive images do not come ou
 8. Click _Save_ and view the page on the frontend.  
  You are now able to view the image resized according to your screen size.
 
-### Documentation articles
-
-[Create a custom widget to display responsive images](http://docs.sitefinity.com/tutorial-create-a-custom-widget-to-display-responsive-images)
-
 ### Additional resources
 Youtube video demo:   
 [![Responsive/adaptive images in Sitefinity CMS](https://raw.githubusercontent.com/Sitefinity-SDK/Telerik.Sitefinity.Samples.ResponsiveImages/master/VideoEmbed.png)](https://www.youtube.com/watch?v=mUEJJx1S8Ak)
+
+>**Documentation articles**: [Tutorial: Create a custom widget to display responsive images](http://docs.sitefinity.com/tutorial-create-a-custom-widget-to-display-responsive-images)
