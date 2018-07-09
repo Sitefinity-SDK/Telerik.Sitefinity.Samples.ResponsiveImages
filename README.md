@@ -3,9 +3,11 @@ Progress.Sitefinity.Samples.ResponsiveImages
 
 >**Latest supported version**: Sitefinity CMS 11.0.6700.0
 
+>**Documentation articles**: [Tutorial: Create a custom widget to display responsive images](http://docs.sitefinity.com/tutorial-create-a-custom-widget-to-display-responsive-images)
+
 ### Overview
 
-Responsive design technique builds a single template that dynamically adapts to any resolution or a device. For more information, see [Displaying pages on mobile devices](http://www.sitefinity.com/documentation/documentationarticles/download-and-install-the-responsiveimage-widget). 
+Responsive design technique builds a single template that dynamically adapts to any resolution or a device.
 
 In the Sitefinity CMS responsive design module, responsive images do not come out-of-the-box. This article demonstrates how to build a custom widget that displays responsive images.You can download the source code and implement it. Alternatively, you can follow the steps below to create the widget from scratch. 
 
@@ -70,4 +72,3 @@ In the Sitefinity CMS responsive design module, responsive images do not come ou
 Youtube video demo:   
 [![Responsive/adaptive images in Sitefinity CMS](https://raw.githubusercontent.com/Sitefinity-SDK/Telerik.Sitefinity.Samples.ResponsiveImages/master/VideoEmbed.png)](https://www.youtube.com/watch?v=mUEJJx1S8Ak)
 
->**Documentation articles**: [Tutorial: Create a custom widget to display responsive images](http://docs.sitefinity.com/tutorial-create-a-custom-widget-to-display-responsive-images)
