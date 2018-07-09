@@ -57,12 +57,7 @@ In the Sitefinity CMS responsive design module, responsive images do not come ou
 | **Max height**                        | 480                                         | 600                                          | 768                                         |
 | **Quality**                           | High                                        | High                                         | High                                        |
 | **For developers: name used in code** | thumb480                                    | thumb600                                     | thumb768                                    |
-| The thumbnail will be valid for:       | Devices with width 480px to 960px, such as: | Devices with width 600px to 1024px, such as: | Devices with width 480px to 960px, such as: |
-|                                   | HTC - Vivid, Amaze, HD2                     | iPad                                         | Samsung Galaxy Note 8                       |
-|                                   | BlackBerry Bold 9900                        | Samsung Galaxy Tab                           | Kindle Fire HD                              |
-|                                   | Samsung Galaxy Note 3, etc.                 | Kindle Fire, etc.                            | Samsung Galaxy Tab                          |
-|                                   |                                             |                                              | Microsoft Surface Pro, etc.                 |
-
+| The thumbnail will be valid for:       | Devices with width 480px to 960px | Devices with width 600px to 1024px | Devices with width 480px to 960px |
 6. Drag the _ResponsiveImage_ widget on the page and click its _Edit_ button.
 7. Click _Change photo_ and select one of the uploaded images.
 8. Click _Save_ and view the page on the frontend.  
