@@ -1,4 +1,4 @@
-Progress.Sitefinity.Samples.ResponsiveImages
+ResponsiveImages sample widget
 ===========================================
 
 >**Latest supported version**: Sitefinity CMS 11.0.6700.0
@@ -27,8 +27,8 @@ In the Sitefinity CMS responsive design module, responsive images do not come ou
 3. Restore the NuGet packages in the solution.  
    
    >**NOTE**: The solution in this repository relies on NuGet packages with automatic package restore while the build procedure takes place.   
-   >For a full list of the referenced packages and their versions see the [packages.config](https://github.com/Sitefinity-SDK/Telerik.Sitefinity.Samples.BugTracker/blob/master/SitefinityWebApp/packages.config) file.    
-   >For a history and additional information related to package versions on different releases of this repository, see the [Releases page](https://github.com/Sitefinity-SDK/Telerik.Sitefinity.Samples.BugTracker/releases).
+   >For a full list of the referenced packages and their versions see the [packages.config](http://github.com/Sitefinity/Telerik.Sitefinity.Samples.ResponsiveImages/blob/master/packages.config) file.    
+   >For a history and additional information related to package versions on different releases of this repository, see the [Releases page](http://github.com/Sitefinity/Telerik.Sitefinity.Samples.ResponsiveImages/releases).
    >  
    a. Navigate to _Tools >> NuGet Package Manager >> Package Manager Console_.  
    b. In _Source_, select Sitefinity CMS NuGet Repository.  
@@ -66,4 +66,3 @@ In the Sitefinity CMS responsive design module, responsive images do not come ou
 ### Additional resources
 Youtube video demo:   
 [![Responsive/adaptive images in Sitefinity CMS](https://raw.githubusercontent.com/Sitefinity-SDK/Telerik.Sitefinity.Samples.ResponsiveImages/master/VideoEmbed.png)](https://www.youtube.com/watch?v=mUEJJx1S8Ak)
-
