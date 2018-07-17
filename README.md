@@ -7,9 +7,9 @@ Responsive images sample widget
 
 ### Overview
 
-Responsive design technique builds a single template that dynamically adapts to any resolution or a device.
+This sample demonstrates how to build a custom widget that displays responsive images. You can download the source code and implement it. Alternatively, you can follow the steps in the documentation article to create the widget from scratch. 
 
-In the Sitefinity CMS responsive design module, responsive images do not come out-of-the-box. This article demonstrates how to build a custom widget that displays responsive images.You can download the source code and implement it. Alternatively, you can follow the steps below to create the widget from scratch. 
+Responsive design technique builds a single template that dynamically adapts to any resolution or a device.
 
 ### Prerequisites
 - You must have a Sitefinity CMS license.
